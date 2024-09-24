@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <section class="m-6">
+            <!-- Important FAQ heading and icon -->
+            <div class="flex flex-row justify-center items-center mb-4 bg-blue-100 h-auto p-3 rounded-lg">
+                <h1 class="text-3xl font-bold mr-2">Important FAQ</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                </svg>
+            </div>
+
+            <!-- FAQ section with collapsible items -->
+            <div class="collapse collapse-arrow bg-gray-200 shadow-lg mb-3 rounded-lg">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium bg-gray-200 rounded-t-lg">What is the DOM?</div>
+                <div class="collapse-content">
+                    <p>The DOM (Document Object Model) is a programming interface that represents the structure of web
+                        documents as a tree of objects, allowing dynamic manipulation.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-gray-200 shadow-lg mb-3 rounded-lg">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium bg-gray-200 rounded-t-lg">How is the DOM structured?
+                </div>
+                <div class="collapse-content">
+                    <p>The DOM is organized as a hierarchical tree, where each element, attribute, and text piece is a
+                        node, with the document as the root.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-gray-200 shadow-lg mb-3 rounded-lg">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium bg-gray-200 rounded-t-lg">How can you manipulate the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>You can manipulate the DOM using JavaScript methods like getElementById(), createElement(), and
+                        appendChild() to modify nodes.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-gray-200 shadow-lg mb-3 rounded-lg">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium bg-gray-200 rounded-t-lg">Why is the DOM important in web
+                    development?</div>
+                <div class="collapse-content">
+                    <p>The DOM enables interactive and dynamic web applications by allowing developers to respond to
+                        user events and update content in real-time.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
